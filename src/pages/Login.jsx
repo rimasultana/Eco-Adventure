@@ -9,6 +9,7 @@ const Login = () => {
   const { googleSignIn, userLogin } = useContext(AuthContext);
   const [error, setError] = useState("");
   const location = useLocation();
+  const [email, setEmail] = useState("");
   const from = location.state?.from?.pathname || "/";
 
   const handleLogin = (e) => {
@@ -27,9 +28,15 @@ const Login = () => {
       });
   };
 
+ 
+
+  const handleForgotPassword = () => {
+    navigate("/forget", { state: { email } });
+  };
+
   const handleGoogleLogin = () => {
     googleSignIn()
-      .then((result) => {
+      .then((_result) => {
         navigate(from);
       })
       .catch((error) => {
@@ -51,7 +58,7 @@ const Login = () => {
             <label className="label">
               <span className="label-text text-gray-600">Email</span>
             </label>
-            <input
+            <input onChange={(e)=>setEmail(e.target.value)} 
               type="email"
               placeholder="Enter your email"
               name="email"
@@ -71,12 +78,11 @@ const Login = () => {
               required
             />
             <label className="label">
-              <a
-                href="#"
+              <button onClick={handleForgotPassword}
                 className="label-text-alt link link-hover text-blue-500"
               >
                 Forgot password?
-              </a>
+              </button>
             </label>
           </div>
           <div className="form-control mt-4">

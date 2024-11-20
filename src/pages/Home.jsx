@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import AOS from "aos";
 import LoadingSpinner from "../components/Loading";
 import { useEffect, useState } from "react";
+import { ExtraSection1 } from "../components/ExtraSection1";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -58,6 +59,7 @@ const Home = () => {
           <LoadingSpinner />
         )}
       </div>
+     
     </div>
   );
 };
