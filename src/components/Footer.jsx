@@ -35,18 +35,21 @@ export const Footer = () => {
                 <rect x="14" y="1" width="7" height="6" />
                 <rect x="14" y="11" width="7" height="12" />
               </svg>
-              <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                Company
+              <span className="ml-2 text-xl font-bold tracking-wide text-gray-400 uppercase">
+                Eco <b className="text-green-600">Adventure</b>
               </span>
             </a>
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-deep-purple-50">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+                Adventure is the pursuit of excitement and the thrill of
+                exploring the unknown. It involves stepping out of  comfort
+                zone to embrace new experiences, often in unfamiliar
+                environments
               </p>
               <p className="mt-4 text-sm text-deep-purple-50">
-                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
+                Beyond the physical aspect, adventure enriches the soul by
+                creating unforgettable memories and stories that inspire a
+                lifelong passion for exploration.
               </p>
             </div>
           </div>

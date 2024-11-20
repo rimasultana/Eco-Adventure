@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="relative flex items-center justify-between">
         <Link to="/" className="inline-flex items-center">
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-            Company
+          Eco <b className="text-green-600">Adventure</b>
           </span>
         </Link>
         <ul className="lg:flex items-center hidden space-x-8">{links}</ul>
@@ -93,7 +93,7 @@ const Navbar = () => {
                       className="inline-flex items-center"
                     >
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        Company
+                      Eco Adventure
                       </span>
                     </a>
                   </div>
