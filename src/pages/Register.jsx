@@ -9,7 +9,6 @@ const Register = () => {
   const { createUser, googleSignIn, updateUserProfile } =
     useContext(AuthContext);
 
-  // State for password visibility, validation, and error handling
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [passwordError, setPasswordError] = useState("");
@@ -43,7 +42,6 @@ const Register = () => {
     }
     createUser(email, password)
       .then((result) => {
-        console.log(result);
         updateUserProfile(name, photo)
           .then(() => {
             navigate(from);
@@ -116,7 +114,6 @@ const Register = () => {
               className="input input-bordered"
               required
             />
-            {/* Eye Icon for toggling password visibility */}
             <button
               type="button"
               className="absolute right-4 top-12 text-gray-600"

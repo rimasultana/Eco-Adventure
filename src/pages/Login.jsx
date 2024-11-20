@@ -19,8 +19,7 @@ const Login = () => {
     setError("");
 
     userLogin(email, password)
-      .then((result) => {
-        console.log(result);
+      .then((_result) => {
         navigate(from);
       })
       .catch((error) => {
@@ -31,7 +30,6 @@ const Login = () => {
   const handleGoogleLogin = () => {
     googleSignIn()
       .then((result) => {
-        console.log(result);
         navigate(from);
       })
       .catch((error) => {

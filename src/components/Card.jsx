@@ -2,8 +2,7 @@
 import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
-  const { image, adventureTitle, ecoFriendlyFeatures, id } =
-    data;
+  const { image, adventureTitle, ecoFriendlyFeatures, id } = data;
   return (
     <div
       data-aos="zoom-in-up"

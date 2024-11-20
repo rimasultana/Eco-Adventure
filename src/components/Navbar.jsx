@@ -111,16 +111,29 @@ const Navbar = () => {
                 <nav>
                   <ul className="space-y-4">
                     {links}
-                    <li>
-                      <a
-                        href="/login"
-                        className="inline-flex text-red-800 items-center justify-center w-full h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                        aria-label="Sign up"
-                        title="Sign up"
-                      >
-                        Login
-                      </a>
-                    </li>
+                    {!user ? (
+                      <li>
+                        <a
+                          href="/login"
+                          className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-deep-purple-accent-400 text-red-700 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                          aria-label="Sign up"
+                          title="Sign up"
+                        >
+                          Login
+                        </a>
+                      </li>
+                    ) : (
+                      <li>
+                        <button
+                          onClick={() => logOut()}
+                          className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-deep-purple-accent-400 text-red-700 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                          aria-label="Sign up"
+                          title="Sign up"
+                        >
+                          Log Out
+                        </button>
+                      </li>
+                    )}
                   </ul>
                 </nav>
               </div>

@@ -20,13 +20,11 @@ const UpdateProfile = () => {
         navigate("/my-profile");
       })
       .catch((error) => {
-        console.error("Error updating profile:", error.message);
       });
   };
 
   return (
     <div className="flex flex-col lg:flex-row items-start lg:items-center justify-center min-h-screen p-6">
-      {/* Update Form */}
       <div className="card bg-white w-full max-w-md lg:max-w-lg shadow-lg rounded-lg p-6">
         <form onSubmit={handleUpdateProfile} className="space-y-4">
           <h1 className="text-3xl font-bold text-center text-gray-700">

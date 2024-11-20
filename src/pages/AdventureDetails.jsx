@@ -9,7 +9,6 @@ const AdventureDetails = () => {
     <div className=" p-6">
       <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
         <div className="grid lg:grid-cols-2 items-center">
-          {/* Image Section */}
           <figure className="w-full h-full">
             <img
               src={data.image}
@@ -18,7 +17,6 @@ const AdventureDetails = () => {
             />
           </figure>
 
-          {/* Details Section */}
           <div className="p-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               {data.adventureTitle}
@@ -27,7 +25,6 @@ const AdventureDetails = () => {
               {data.shortDescription}
             </p>
 
-            {/* Key Information */}
             <div className="space-y-3">
               <p>
                 <strong className="font-medium">Location:</strong>{" "}
@@ -53,7 +50,6 @@ const AdventureDetails = () => {
               </p>
             </div>
 
-            {/* Included Items */}
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-gray-800">
                 Included Items
@@ -65,7 +61,6 @@ const AdventureDetails = () => {
               </ul>
             </div>
 
-            {/* Eco-Friendly Features */}
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-gray-800">
                 Eco-Friendly Features
@@ -77,7 +72,6 @@ const AdventureDetails = () => {
               </ul>
             </div>
 
-            {/* Special Instructions */}
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-gray-800">
                 Special Instructions
@@ -89,7 +83,6 @@ const AdventureDetails = () => {
               </ul>
             </div>
 
-            {/* Booking Button */}
             <button
               className={`btn mt-8 w-full py-3 px-5 rounded-lg text-white font-medium text-lg ${
                 data.bookingAvailability
