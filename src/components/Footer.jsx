@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return (
     <div className="relative mt-16 bg-deep-purple-accent-400">
@@ -20,21 +22,7 @@ export const Footer = () => {
               title="Company"
               className="inline-flex items-center"
             >
-              <svg
-                className="w-8 text-teal-accent-400"
-                viewBox="0 0 24 24"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                stroke="currentColor"
-                fill="none"
-              >
-                <rect x="3" y="1" width="7" height="12" />
-                <rect x="3" y="17" width="7" height="6" />
-                <rect x="14" y="1" width="7" height="6" />
-                <rect x="14" y="11" width="7" height="12" />
-              </svg>
+              <img className="w-10 rounded-full" src="/vite.webp" alt="" />
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-400 uppercase">
                 Eco <b className="text-green-600">Adventure</b>
               </span>
@@ -42,101 +30,54 @@ export const Footer = () => {
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-deep-purple-50">
                 Adventure is the pursuit of excitement and the thrill of
-                exploring the unknown. It involves stepping out of  comfort
-                zone to embrace new experiences, often in unfamiliar
-                environments
-              </p>
-              <p className="mt-4 text-sm text-deep-purple-50">
-                Beyond the physical aspect, adventure enriches the soul by
-                creating unforgettable memories and stories that inspire a
-                lifelong passion for exploration.
+                exploring the unknown. It involves stepping out of comfort zone
+                to embrace new experiences, often in unfamiliar environments
               </p>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Category
-              </p>
+          <div>
+              <h2 className="font-semibold tracking-wide text-gray-900 uppercase">Services</h2>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    News
-                  </a>
+                  <Link to="/" className="text-gray-500 hover:text-teal-accent-400 text-sm">
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    World
-                  </a>
+                  <Link to="/my-profile" className="text-gray-500 hover:text-teal-accent-400 text-sm">
+                    My Profile
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Games
-                  </a>
+                  <Link to="/update-profile" className="text-gray-500 hover:text-teal-accent-400 text-sm">
+                    Update Profile
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    References
-                  </a>
+                  <Link to="/details/:id" className="text-gray-500 hover:text-teal-accent-400 text-sm">
+                    Adventure Details
+                  </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Cherry
-              </p>
+              <h2 className="font-semibold tracking-wide text-gray-900 uppercase">Support</h2>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Web
-                  </a>
+                  <Link to="/login" className="text-gray-500 hover:text-teal-accent-400 text-sm">
+                    Login
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    eCommerce
-                  </a>
+                  <Link to="/register" className="text-gray-500 hover:text-teal-accent-400 text-sm">
+                    Register
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Business
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Entertainment
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Portfolio
-                  </a>
+                  <Link to="/forget" className="text-gray-500 hover:text-teal-accent-400 text-sm">
+                    Forgot Password
+                  </Link>
                 </li>
               </ul>
             </div>

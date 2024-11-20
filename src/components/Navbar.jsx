@@ -33,8 +33,10 @@ const Navbar = () => {
     <div className="py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
         <Link to="/" className="inline-flex items-center">
+          <img className="w-10 rounded-full" src="/vite.webp" alt="" />
+
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-          Eco <b className="text-green-600">Adventure</b>
+            Eco <b className="text-green-600">Adventure</b>
           </span>
         </Link>
         <ul className="lg:flex items-center hidden space-x-8">{links}</ul>
@@ -93,7 +95,7 @@ const Navbar = () => {
                       className="inline-flex items-center"
                     >
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                      Eco Adventure
+                        Eco Adventure
                       </span>
                     </a>
                   </div>
