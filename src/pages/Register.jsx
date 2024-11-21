@@ -41,7 +41,7 @@ const Register = () => {
       return;
     }
     createUser(email, password)
-      .then((result) => {
+      .then(() => {
         updateUserProfile(name, photo)
           .then(() => {
             navigate(from);

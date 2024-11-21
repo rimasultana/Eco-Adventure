@@ -20,7 +20,7 @@ const Login = () => {
     setError("");
 
     userLogin(email, password)
-      .then((_result) => {
+      .then(() => {
         navigate(from);
       })
       .catch((error) => {
@@ -36,7 +36,7 @@ const Login = () => {
 
   const handleGoogleLogin = () => {
     googleSignIn()
-      .then((_result) => {
+      .then(() => {
         navigate(from);
       })
       .catch((error) => {
