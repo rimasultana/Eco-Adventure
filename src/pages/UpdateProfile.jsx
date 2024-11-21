@@ -20,6 +20,7 @@ const UpdateProfile = () => {
         navigate("/my-profile");
       })
       .catch((error) => {
+        console.log(error,"error");
       });
   };
 

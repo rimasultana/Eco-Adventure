@@ -3,6 +3,7 @@ import { HiMiniBarsArrowDown } from "react-icons/hi2";
 import { GiCrossedBones } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import img from "../assets/img.jpg";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -41,11 +42,11 @@ const Navbar = () => {
         </Link>
         <ul className="lg:flex items-center hidden space-x-8">{links}</ul>
         <ul className=" items-center hidden space-x-8 lg:flex">
-          {user && user ? (
+          { user ?  (
             <li>
               <div className="avatar online">
                 <div className="w-12 rounded-full">
-                  <img src={user.photoURL} />
+                  <img src={user.photoURL ? user.photoURL : img} />
                 </div>
               </div>
             </li>
