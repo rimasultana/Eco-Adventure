@@ -46,7 +46,7 @@ const Navbar = () => {
             <li>
               <div className="avatar online">
                 <div className="w-12 rounded-full">
-                  <img src={user.photoURL ? user.photoURL : img} />
+                  <img src={user.photoURL ? user.photoURL : img} title={user?.displayName} />
                 </div>
               </div>
             </li>
