@@ -42,13 +42,13 @@ The **Eco-Adventure Experience Blog** is designed to showcase eco-friendly trave
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/programming-hero-web-course1/b10-a9-authentication-rimasultana
+   git clone https://github.com/rimasultana/Eco-Adventure
    ```
    
 2. **Navigate to the Project Folder**:
    After cloning the repository, navigate into the project directory:
    ```bash
-   cd b10-a9-authentication-rimasultana
+   cd Eco-Adventure
    ```
 
 3. **Install Dependencies**:
@@ -60,7 +60,7 @@ The **Eco-Adventure Experience Blog** is designed to showcase eco-friendly trave
      ```
    - If using **yarn**:
      ```bash
-     yarn install
+     yarn
      ```
    - If using **Bun**:
      ```bash
@@ -85,20 +85,20 @@ The **Eco-Adventure Experience Blog** is designed to showcase eco-friendly trave
    
    - If using **npm**:
      ```bash
-     npm start
+     npm run dev
      ```
    - If using **yarn**:
      ```bash
-     yarn start
+     yarn dev
      ```
    - If using **Bun**:
      ```bash
-     bun dev
+     bun run dev
      ```
 
-   This will start the project and open it in your default web browser, usually at `http://localhost:3000`.
+   This will start the project and open it in your default web browser, usually at `http://localhost:5173`.
 
 6. **Access the Application**:
-   Open your browser and go to `http://localhost:3000` to view the application running locally.
+   Open your browser and go to `http://localhost:5173` to view the application running locally.
 
 ---
