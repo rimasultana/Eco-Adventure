@@ -29,7 +29,6 @@ The **Eco-Adventure Experience Blog** is designed to showcase eco-friendly trave
 
 
 
-Here's how you can add guidelines to run the project locally:
 
 ---
 
